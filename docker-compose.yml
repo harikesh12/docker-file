@@ -1,0 +1,13 @@
+version: '3.0'
+services:
+  redis:
+    image: redis:alpine
+  clickcounter:
+    image: kodekloud/click-counter
+    ports:
+    - 8085:5000
+
+
+# docker compose up -d   --> to run docker compose file
+# docker compose down  --> to put down docker compose file
+# vi docker-compose.yml
